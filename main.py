@@ -29,10 +29,10 @@ tags = [post['tags'] for post in posts_metadata]
 bread_html = bread_template.render(posts=posts_metadata, tags=tags)
 
 #ekki output heldur upp úr vinnumöppunni og í recipes möppuna
-with open('../kvikun-myrecipes-outut/index.html', 'w',encoding="utf-8") as file:
+with open('../kvikun-myrecipes-output/index.html', 'w',encoding="utf-8") as file:
     file.write(index_html)
 
-with open('../kvikun-myrecipes-outut/bread.html', 'w',encoding="utf-8") as file:
+with open('../kvikun-myrecipes-output/bread.html', 'w',encoding="utf-8") as file:
     file.write(bread_html)
 
 for post in POSTS:
